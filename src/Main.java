@@ -16,8 +16,8 @@ public class Main extends PApplet {
 
     public Main(){
         app = this;
-        NUM_ROWS = 50;
-        NUM_COLUMNS = 100;
+        NUM_ROWS = 60;
+        NUM_COLUMNS = 60;
         CELL_SIZE = 10;
         cells = new Cell[NUM_ROWS][NUM_COLUMNS];
         doEvolve = false;
@@ -50,7 +50,7 @@ public class Main extends PApplet {
             }
         }
         if (doEvolve){
-            delay(500);
+            delay(150);
             applyRules();
             evolve();
         }
