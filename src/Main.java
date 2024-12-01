@@ -32,11 +32,9 @@ public class Main extends PApplet {
         for (int r = 0; r < NUM_ROWS; r++){
             for(int c = 0; c < NUM_COLUMNS; c++){
                 double rand = Math.random();
-                if (rand > 0.4 && r > 0 && c > 0 && r < NUM_ROWS-1 && c < NUM_COLUMNS-1){
+                if (rand > 0.75 && r > 0 && c > 0 && r < NUM_ROWS-1 && c < NUM_COLUMNS-1){
                     cells[r][c] = new Cell(c*CELL_SIZE, r*CELL_SIZE, CELL_SIZE, r, c, CellState.ALIVE, rules);
                 } else {
-
-
                     cells[r][c] = new Cell(c*CELL_SIZE, r*CELL_SIZE, CELL_SIZE, r, c, CellState.DEAD, rules);
                 }
             }
